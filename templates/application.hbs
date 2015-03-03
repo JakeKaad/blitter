@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default">
+  <div class='container-fluid'>
+    {{#link-to 'bleats'}}
+      <a class='navbar-brand'>
+        Blitter
+      </a>
+    {{/link-to}}
+    <ul class="nav navbar-nav navbar-list">
+        <li class="active"><a href="#">New Bleat!</a></li>
+        <li><a href="#">Recent Bleats</a></li>
+        <li><a href="#">Help! I'm Not a Sheep!</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<body>
+  <div class="container">
+    {{outlet}}
+  </div>
+</body>

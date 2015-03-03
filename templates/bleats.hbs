@@ -1,0 +1,14 @@
+<form>
+  <label class="form-group">New Bleat!</label>
+  {{input type="text" value=newBleatBody}}
+
+  <button class='btn btn-info' {{action "createBleat"}}>Bleat!</button>
+</form>
+
+{{#each}}
+  <div class="col-md-12">
+    <div class="well bleat-well col-md-4">
+      {{body}}
+    </div>
+  </div>
+{{/each}}
