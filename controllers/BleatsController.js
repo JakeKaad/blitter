@@ -10,11 +10,5 @@ Blitter.BleatsController = Ember.ArrayController.extend({
         timestamp: new Date(),
       });
     }
-    // hideBleat: function(bleat) {
-    //   Ember.set(bleat, "small", false)
-    // },
-    // showBleat: function(bleat) {
-    //   Ember.set(bleat, "small", true)
-    // }
   }
 });

@@ -7,15 +7,24 @@
 
 {{#each controller}}
   {{#if small}}
-    <div class="col-md-12" {{ action "hideBleat" item on="click" }}>
+    <div class="col-md-12" >
       <div class="well bleat-well col-md-4">
-        {{body}}
+        {{body}} <br/>
+        <button class='btn btn-default btn-small' {{ action "hideBleat" item on="click" }}>Rebaa-aa</button>
       </div>
     </div>
   {{else}}
-    <div class="col-md-12" {{ action "showBleat" item on="click" }}>
+    <div class="col-md-12">
       <div class="well bleat-well-large col-md-4">
-        {{body}}
+        {{body}}<br/>
+        <form>
+          <label for='newRebaa'></label>
+          {{input type='text' value=newRebaaBody }}
+          <button class='btn btn-default btn-small' {{ action "createRebaa" newRebaaBody on="click" }}>Confirm</button>
+        </form>
+        {{#each rebaas}}
+          {{body}}
+
         <hr/>
         <span class="timestamp"> {{timestamp}} </span>
       </div>

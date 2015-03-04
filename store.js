@@ -57,6 +57,20 @@ var bleats = [
     id: 10,
     body: "Wolf!",
     timestamp: new Date(2015, 01, 10),
-    small: true
+    small: true,
+    rebaas: []
   }
-]
+];
+
+var rebaas = [
+  {
+    id: 1,
+    bleat_id: 10,
+    body: "Run!"
+  },
+  {
+    id: 2,
+    bleat_id: 1,
+    body: "Baa-AAA-aaa!"
+  }
+];
